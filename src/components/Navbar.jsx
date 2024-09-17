@@ -48,7 +48,7 @@ function Navbar() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [handleScroll]);
 
     const handleClick = (sectionId) => {
         setSelected(sectionId);
