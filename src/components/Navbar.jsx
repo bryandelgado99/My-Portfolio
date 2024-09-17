@@ -62,11 +62,11 @@ function Navbar() {
     return (
         <div className={`flex justify-center items-center w-full h-auto`}>
             <nav
-                className={`fixed sm:top-0 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'sm:w-full sm:rounded-none sm:my-0 sm:justify-evenly sm:py-3' : 'sm:w-fit sm:my-8'} bg-indigo-400 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}>
+                className={`fixed sm:top-0 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'w-full sm:w-full sm:rounded-none sm:my-0 sm:justify-evenly sm:py-3' : 'w-full sm:w-fit sm:my-8'} bg-indigo-400 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}>
 
                 {/* Botón de Inicio */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'inicio' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'inicio' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'inicio' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('inicio')}
                 >
                     <FontAwesomeIcon icon={faHouseChimney} className="text-base sm:text-md"/>
@@ -75,7 +75,7 @@ function Navbar() {
 
                 {/* Botón de Acerca De */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'acerca' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'acerca' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'acerca' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('acerca')}
                 >
                     <FontAwesomeIcon icon={faAddressCard} className="text-base sm:text-md"/>
@@ -84,7 +84,7 @@ function Navbar() {
 
                 {/* Botón de Habilidades */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'habilidades' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'habilidades' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'habilidades' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('habilidades')}
                 >
                     <FontAwesomeIcon icon={faLightbulb} className="text-base sm:text-md"/>
@@ -93,7 +93,7 @@ function Navbar() {
 
                 {/* Botón de Proyectos */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'proyectos' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'proyectos' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'proyectos' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('proyectos')}
                 >
                     <FontAwesomeIcon icon={faBriefcase} className="text-base sm:text-md"/>
@@ -102,7 +102,7 @@ function Navbar() {
 
                 {/* Botón de Contacto */}
                 <button
-                    className={`flex flex-col justify-center sm:flex-row items-center ${selected === 'contacto' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center sm:flex-row items-center ${selected === 'contacto' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'contacto' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('contacto')}
                 >
                     <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-base sm:text-md"/>
