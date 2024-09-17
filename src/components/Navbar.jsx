@@ -66,29 +66,29 @@ function Navbar() {
 
                 {/* Botón de Inicio */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'inicio' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'inicio' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'inicio' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'inicio' ? 'sm:hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('inicio')}
                 >
                     <FontAwesomeIcon icon={faHouseChimney} className="text-base sm:text-md"/>
-                    <span className={`${selected === 'inicio' ? 'block' : 'hidden'} sm:block text-xs sm:text-md`}>Inicio</span>
+                    <span className={`${selected === 'inicio' ? 'block' : 'hidden'} sm:block text-xs sm:text-md font-label`}>Inicio</span>
                 </button>
 
                 {/* Botón de Acerca De */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'acerca' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'acerca' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'acerca' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'acerca' ? 'sm:hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('acerca')}
                 >
                     <FontAwesomeIcon icon={faAddressCard} className="text-base sm:text-md"/>
-                    <span className={`${selected === 'acerca' ? 'block' : 'hidden'} sm:block text-xs sm:text-md`}>Sobre Mí</span>
+                    <span className={`${selected === 'acerca' ? 'block' : 'hidden'} sm:block text-xs sm:text-md font-label`}>Sobre Mí</span>
                 </button>
 
                 {/* Botón de Habilidades */}
                 <button
-                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'habilidades' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'habilidades' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center items-center sm:flex-row ${selected === 'habilidades' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'habilidades' ? 'sm:hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('habilidades')}
                 >
                     <FontAwesomeIcon icon={faLightbulb} className="text-base sm:text-md"/>
-                    <span className={`${selected === 'habilidades' ? 'block' : 'hidden'} sm:block text-xs sm:text-md`}>Habilidades</span>
+                    <span className={`${selected === 'habilidades' ? 'block' : 'hidden'} sm:block text-xs sm:text-md font-label`}>Habilidades</span>
                 </button>
 
                 {/* Botón de Proyectos */}
@@ -97,16 +97,16 @@ function Navbar() {
                     onClick={() => handleClick('proyectos')}
                 >
                     <FontAwesomeIcon icon={faBriefcase} className="text-base sm:text-md"/>
-                    <span className={`${selected === 'proyectos' ? 'block' : 'hidden'} sm:block text-xs sm:text-md`}>Proyectos</span>
+                    <span className={`${selected === 'proyectos' ? 'block' : 'hidden'} sm:block text-xs sm:text-md font-label`}>Proyectos</span>
                 </button>
 
                 {/* Botón de Contacto */}
                 <button
-                    className={`flex flex-col justify-center sm:flex-row items-center ${selected === 'contacto' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'contacto' ? 'hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
+                    className={`flex flex-col justify-center sm:flex-row items-center ${selected === 'contacto' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : ''} ${selected !== 'contacto' ? 'sm:hover:bg-indigo-500' : ''} gap-1 px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('contacto')}
                 >
                     <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-base sm:text-md"/>
-                    <span className={`${selected === 'contacto' ? 'block' : 'hidden'} sm:block text-xs sm:text-md`}>Contacto</span>
+                    <span className={`${selected === 'contacto' ? 'block' : 'hidden'} sm:block text-xs sm:text-md font-label`}>Contacto</span>
                 </button>
             </nav>
         </div>
