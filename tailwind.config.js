@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {},
+    darkMode: 'selector',
     screens:{
       'sm': '700px',
     }
