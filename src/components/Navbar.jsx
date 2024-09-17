@@ -17,6 +17,7 @@ function Navbar() {
     const sections = ['inicio', 'acerca', 'habilidades', 'proyectos', 'contacto'];
 
     // Función para manejar el scroll y actualizar el estado
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const handleScroll = () => {
         let currentSection = '';
         const scrollTop = window.scrollY;
@@ -53,7 +54,7 @@ function Navbar() {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [handleScroll]);
 
     const handleClick = (sectionId) => {
         setSelected(sectionId);
