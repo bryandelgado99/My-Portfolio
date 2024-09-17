@@ -61,7 +61,7 @@ function Navbar() {
     return (
         <div className={`flex justify-center items-center w-full h-auto`}>
             <nav
-                className={`fixed sm:top-0 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto sm:my-4 bottom-0 ${isScrolled ? 'sm:w-full sm:rounded-none sm:my-0 sm:justify-evenly' : 'sm:w-fit'} bg-indigo-400 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around space-x-2`}>
+                className={`fixed sm:top-0 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'sm:w-full sm:rounded-none sm:my-0 sm:justify-evenly sm:py-3' : 'sm:w-fit sm:my-8'} bg-indigo-400 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around space-x-2`}>
                 {/* Botón de Inicio */}
                 <button
                     className={`flex items-center ${selected === 'inicio' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} px-5 py-4 rounded-full transition duration-300 ease-in-out`}
