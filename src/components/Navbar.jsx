@@ -67,7 +67,7 @@ function Navbar() {
                     className={`flex items-center ${selected === 'inicio' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('inicio')}
                 >
-                    <FontAwesomeIcon icon={faHouseChimney} className="text-xl sm:text-md"/>
+                    <FontAwesomeIcon icon={faHouseChimney} className="text-base sm:text-md"/>
                     <span className={`ml-2 ${selected === 'inicio' ? 'block' : 'hidden'} sm:block text-sm sm:text-md`}>Inicio</span>
                 </button>
 
@@ -76,8 +76,8 @@ function Navbar() {
                     className={`flex items-center ${selected === 'acerca' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('acerca')}
                 >
-                    <FontAwesomeIcon icon={faAddressCard} className="text-xl sm:text-md"/>
-                    <span className={`ml-2 ${selected === 'acerca' ? 'block' : 'hidden'} sm:block text-sm sm:text-md`}>Acerca de Mi</span>
+                    <FontAwesomeIcon icon={faAddressCard} className="text-base sm:text-md"/>
+                    <span className={`ml-2 ${selected === 'acerca' ? 'block' : 'hidden'} sm:block text-sm sm:text-md`}>Sobre Mí</span>
                 </button>
 
                 {/* Botón de Habilidades */}
@@ -85,7 +85,7 @@ function Navbar() {
                     className={`flex items-center ${selected === 'habilidades' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('habilidades')}
                 >
-                    <FontAwesomeIcon icon={faLightbulb} className="text-xl sm:text-md"/>
+                    <FontAwesomeIcon icon={faLightbulb} className="text-base sm:text-md"/>
                     <span className={`ml-2 ${selected === 'habilidades' ? 'block' : 'hidden'} sm:block text-sm sm:text-md`}>Habilidades</span>
                 </button>
 
@@ -94,7 +94,7 @@ function Navbar() {
                     className={`flex items-center ${selected === 'proyectos' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('proyectos')}
                 >
-                    <FontAwesomeIcon icon={faBriefcase} className="text-xl sm:text-md"/>
+                    <FontAwesomeIcon icon={faBriefcase} className="text-base sm:text-md"/>
                     <span className={`ml-2 ${selected === 'proyectos' ? 'block' : 'hidden'} sm:block text-sm sm:text-md`}>Proyectos</span>
                 </button>
 
@@ -103,7 +103,7 @@ function Navbar() {
                     className={`flex items-center ${selected === 'contacto' ? 'bg-white text-indigo-400 animate__animated animate__fadeIn' : 'hover:bg-indigo-500'} px-5 py-4 rounded-full transition duration-300 ease-in-out`}
                     onClick={() => handleClick('contacto')}
                 >
-                    <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-xl sm:text-md"/>
+                    <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-base sm:text-md"/>
                     <span className={`ml-2 ${selected === 'contacto' ? 'block' : 'hidden'} sm:block text-sm sm:text-md`}>Contacto</span>
                 </button>
             </nav>
