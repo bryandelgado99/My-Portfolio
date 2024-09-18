@@ -65,7 +65,7 @@ function Navbar() {
     };
 
     return (
-        <div className={`flex justify-center items-center w-full h-auto`}>
+        <div className={`sticky flex justify-center items-center w-full h-auto z-20`}>
             <nav
                 className={`fixed sm:top-0 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto dark:bg-indigo-900 bottom-0 ${isScrolled ? 'w-full sm:w-full sm:rounded-none sm:my-0 sm:justify-evenly sm:py-3' : 'w-full sm:w-fit sm:my-8'} bg-indigo-400 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}>
 

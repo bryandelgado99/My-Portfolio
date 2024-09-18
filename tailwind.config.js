@@ -6,16 +6,28 @@ export default {
   ],
   theme: {
     extend: {
-      darkMode: 'class',
+      // Añadir estilos personalizados
+      colors: {
+        'md-outline': '#fbfbfb',
+        'md-on-surface': '#fbfbfb',
+        'md-secondary-container': '#cce8e7',
+        'md-filter-chip-label-text': '#fbfbfb',
+        'md-filter-chip-selected-container': 'rgb(129 140 248)',
+      },
       fontFamily: {
         title: ["Poppins", "sans-serif"],
         body: ["Open Sans", "sans-serif"],
-        label: ["Poppins", "sans-serif"]
-      }
+        label: ["Poppins", "sans-serif"],
+        'md-filter-chip-label': ["Poppins", "sans-serif"], // Nueva fuente personalizada
+      },
+      borderRadius: {
+        'md-filter-chip-container': '16px', // Nueva forma personalizada
+      },
     },
-    screens:{
+    screens: {
       'sm': '700px',
-    }
+    },
+    darkMode: 'class',
   },
   plugins: [],
 }
