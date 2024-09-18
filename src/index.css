@@ -12,7 +12,6 @@
     --md-sys-color-outline: #fbfbfb;
     --md-sys-color-on-surface: #fbfbfb;
     --md-sys-color-secondary-container: #cce8e7;
-    --md-filter-chip-label-text-color: #fbfbfb;
-    --md-filter-chip-selected-container-color: rgb(129 140 248);
-
+    --md-filled-tonal-button-container-color: rgb(129 140 248);
+    --md-filled-tonal-button-label-text-color: #fbfbfb;
 }

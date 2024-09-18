@@ -1,18 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from 'react';
 import '@material/web/button/filled-button.js';
-import '@material/web/chips/filter-chip.js';
+import '@material/web/button/filled-tonal-button.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faMobile,
-    faGlobe,
-    faCode,
-    faFeatherAlt,
-    faCube,
-    faSyncAlt,
+    faFilter,
+    //faMobile,
+    //faGlobe,
+    //faCode,
+    //faCube,
+    //faSyncAlt,
     faX
 } from '@fortawesome/free-solid-svg-icons';
-import {faAngular, faFlutter, faJava, faReact} from "@fortawesome/free-brands-svg-icons";
+//import {faAngular, faFlutter, faJava, faReact} from "@fortawesome/free-brands-svg-icons";
 
 // eslint-disable-next-line react/prop-types
 function ProjectCompose({ isOpen, onClose }) {
@@ -35,13 +35,13 @@ function ProjectCompose({ isOpen, onClose }) {
     return (
         <>
             <div
-                className="fixed inset-0 bg-gray-600 flex sm:flex-row flex-col justify-center items-center z-50 m-5 rounded-md animate__animated animate__fadeInUp">
+                className="fixed inset-0 bg-gray-800 flex sm:flex-row flex-col justify-center items-center z-50 m-5 rounded-md animate__animated animate__fadeInUp">
                 <section
-                    className="w-full h-full bg-indigo-800 flex overflow-auto rounded-lg sm:p-5 flex-col backdrop-blur-lg">
+                    className="w-full h-full bg-indigo-600 flex overflow-auto rounded-lg sm:p-5 flex-col backdrop-blur-lg">
                     {/* Encabezado del modal */}
                     <div
-                        className="flex flex-row justify-between items-center w-full px-5 py-3">
-                        <h1 className="text-white font-title text-lg sm:text-3xl font-bold">
+                        className="flex flex-row justify-between items-center w-full sm:p-8 p-9">
+                        <h1 className="text-white font-title text-4xl font-bold">
                             Todos los proyectos
                         </h1>
 
@@ -53,64 +53,16 @@ function ProjectCompose({ isOpen, onClose }) {
                             <FontAwesomeIcon icon={faX} className="text-white" />
                         </md-filled-button>
                     </div>
-                    <div className="flex flex-col justify-start items-center w-full h-fit py-8 text-justify text-base text-white font-body mt-5">
-                        <p>Aquí encontrarás los proyectos realizados y puedes conocer sus características, las
-                            tecnologías empleadas y el repositorio con el código del mismo. Puedes filtrar los items por tecnologías, lenguajes y dispositivos de destino.</p>
-                        {/* Filter chips */}
-                        <div className="flex flex-row flex-wrap gap-x-3 gap-y-3 justify-around items-center w-full p-4 mt-10 rounded-md h-fit text-justify">
-                            <md-chip-set aria-labelledby="dates-label">
-                                {/* Aplicación Móvil */}
-                                <md-filter-chip label="Aplicación Móvil">
-                                    <FontAwesomeIcon icon={faMobile} slot="icon" className="text-white"/>
-                                </md-filter-chip>
+                    <p className="px-9 sm:px-8 text-white font-body text-base mt-4 sm:text-lg text-justify py-6 sm:py-8">Aquí encontrarás los proyectos realizados y puedes conocer sus características, las
+                        tecnologías empleadas y el repositorio con el código del mismo. Puedes filtrar los items por tecnologías, lenguajes y dispositivos de destino.</p>
+                    {/* Filter Item */}
+                    <span className="flex w-full py-5 px-8 justify-end items-center">
+                        <md-filled-tonal-button>
+                            <FontAwesomeIcon icon={faFilter} className="mr-4"/>
+                            Ordenar por
+                        </md-filled-tonal-button>
+                    </span>
 
-                                {/* Aplicación Web */}
-                                <md-filter-chip label="Aplicación Web">
-                                    <FontAwesomeIcon icon={faGlobe} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* Flutter */}
-                                <md-filter-chip label="Flutter">
-                                    <FontAwesomeIcon icon={faFlutter} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* React */}
-                                <md-filter-chip label="React">
-                                    <FontAwesomeIcon icon={faReact} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* Tailwind */}
-                                <md-filter-chip label="Tailwind">
-                                    <FontAwesomeIcon icon={faCode} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* JetPack Compose */}
-                                <md-filter-chip label="JetPack Compose">
-                                    <FontAwesomeIcon icon={faCube} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* Java */}
-                                <md-filter-chip label="Java">
-                                    <FontAwesomeIcon icon={faJava} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* Ionic */}
-                                <md-filter-chip label="Ionic">
-                                    <ion-icon name="logo-ionic" slot="icon" className="text-white"></ion-icon>
-                                </md-filter-chip>
-
-                                {/* Angular */}
-                                <md-filter-chip label="Angular">
-                                    <FontAwesomeIcon icon={faAngular} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-
-                                {/* Sistema Híbrido */}
-                                <md-filter-chip label="Sistema Híbrido">
-                                    <FontAwesomeIcon icon={faSyncAlt} slot="icon" className="text-white"/>
-                                </md-filter-chip>
-                            </md-chip-set>
-                        </div>
-                    </div>
                 </section>
             </div>
         </>

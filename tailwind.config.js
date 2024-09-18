@@ -25,7 +25,7 @@ export default {
       },
     },
     screens: {
-      'sm': '700px',
+      'sm': '800px',
     },
     darkMode: 'class',
   },
