@@ -14,4 +14,8 @@
     --md-sys-color-secondary-container: #cce8e7;
     --md-filled-tonal-button-container-color: rgb(129 140 248);
     --md-filled-tonal-button-label-text-color: #fbfbfb;
+    --md-dialog-container-color: rgb(133, 141, 216);
+    --md-filled-tonal-button-label-text-font: "Poppins":
+    --md-outlined-button-label-text-font: "Poppins";
+    --md-outlined-button-label-text-color: rgb(255, 255, 255);
 }
