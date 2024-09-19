@@ -18,4 +18,5 @@
     --md-filled-tonal-button-label-text-font: "Poppins":
     --md-outlined-button-label-text-font: "Poppins";
     --md-outlined-button-label-text-color: rgb(255, 255, 255);
+    --md-filled-icon-button-icon-size: 16px;
 }
