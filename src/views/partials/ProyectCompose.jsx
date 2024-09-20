@@ -29,8 +29,8 @@ function ProjectCompose({ isOpen, onClose }) {
 
     return (
         <>
-            <div className="fixed inset-0 bg-gray-800 flex sm:flex-row flex-col justify-center items-center z-50 m-5 rounded-md animate__animated animate__fadeInUp">
-                <section className="w-full h-full bg-indigo-600 flex overflow-auto rounded-lg sm:p-5 flex-col backdrop-blur-lg">
+            <div className="fixed inset-0 bg-gray-800 flex sm:flex-row flex-col justify-center items-center z-50 m-5 rounded-3xl animate__animated animate__fadeInUp">
+                <section className="w-full h-full bg-indigo-600 flex overflow-auto rounded-lg flex-col backdrop-blur-lg px-5">
                     {/* Encabezado del modal */}
                     <div className="flex flex-row justify-between items-center w-full p-8">
                         <h1 className="text-white font-title text-xl sm:text-4xl font-bold">
@@ -50,7 +50,7 @@ function ProjectCompose({ isOpen, onClose }) {
                     </p>
 
                     {/* Botón para abrir el cuadro flotante */}
-                    <span className="flex w-full py-5 px-8 justify-end items-center">
+                    <span className="flex w-full py-6 px-8 justify-end items-center">
                         <md-filled-tonal-button onClick={handleOpenDialog}>
                             <FontAwesomeIcon icon={faFilter} className="mr-4" />
                             Ordenar por
@@ -61,6 +61,11 @@ function ProjectCompose({ isOpen, onClose }) {
                     {isDialogOpen && (
                         <DialogFilter handleClose={handleCloseDialog} />
                     )}
+
+                    {/*Componente de datos*/}
+                    <div className='w-full h-full rounded-t-3xl bg-indigo-300'> 
+
+                    </div>
                 </section>
             </div>
         </>
