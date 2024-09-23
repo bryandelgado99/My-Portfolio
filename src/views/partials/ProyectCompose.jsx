@@ -32,7 +32,7 @@ function ProjectCompose({ isOpen, onClose }) {
             <div className="fixed inset-0 bg-gray-800 flex sm:flex-row flex-col justify-center items-center z-50 m-5 rounded-3xl animate__animated animate__fadeInUp">
                 <section className="w-full h-full bg-indigo-600 flex overflow-auto rounded-lg flex-col backdrop-blur-lg px-5">
                     {/* Encabezado del modal */}
-                    <div className="flex flex-row justify-between items-center w-full p-8">
+                    <div className="flex flex-row justify-between items-center w-full py-8 px-4">
                         <h1 className="text-white font-title text-xl sm:text-4xl font-bold">
                             Todos los proyectos
                         </h1>
@@ -44,7 +44,7 @@ function ProjectCompose({ isOpen, onClose }) {
                         </md-filled-icon-button>
 
                     </div>
-                    <p className="px-9 sm:px-8 text-white font-body text-base mt-4 sm:text-lg text-justify py-4 sm:py-6">
+                    <p className="px-4 sm:px-8 text-white font-body text-sm tablet:text-base mt-4 sm:text-lg text-justify py-4 sm:py-6">
                         Aquí encontrarás los proyectos realizados y puedes conocer sus características, las
                         tecnologías empleadas y el repositorio con el código del mismo. Puedes filtrar los items por tecnologías, lenguajes y dispositivos de destino.
                     </p>

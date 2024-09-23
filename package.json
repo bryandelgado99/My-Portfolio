@@ -25,6 +25,7 @@
     "react-dom": "^18.3.1",
     "react-flagpack": "^2.0.5",
     "react-router-dom": "^6.26.2",
+    "react-scroll-parallax": "^3.4.5",
     "react-select": "^5.8.0"
   },
   "devDependencies": {

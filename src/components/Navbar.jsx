@@ -67,7 +67,7 @@ function Navbar() {
     return (
         <div className={`sticky flex justify-center items-center w-full h-auto z-20`}>
             <nav
-                className={`fixed sm:bottom-8 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'w-full sm:w-fit sm:rounded-full sm:my-5 sm:justify-evenly tablet:bg-opacity-50 tablet:backdrop-blur-md' : 'w-full tablet:bottom-0 sm:rounded-none'} bg-indigo-600 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}
+                className={`fixed sm:bottom-8 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'w-full sm:w-fit sm:rounded-full sm:justify-evenly sm:bg-opacity-50 sm:backdrop-blur-md' : 'w-full sm:w-fit tablet:bottom-0 sm:-bottom-1 sm:shadow-3xl sm:rounded-3xl'} bg-indigo-600 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}
             >
 
 
@@ -77,7 +77,7 @@ function Navbar() {
                     onClick={() => handleClick('inicio')}
                 >
                     <FontAwesomeIcon icon={faHouseChimney} className="text-base sm:text-md"/>
-                    <span className={`hidden sm:block text-xs sm:text-md font-label`}>Inicio</span>
+                    <span className={`hidden tablet:block text-xs sm:text-md font-label`}>Inicio</span>
                 </button>
 
                 {/* Botón de Acerca De */}
@@ -86,7 +86,7 @@ function Navbar() {
                     onClick={() => handleClick('acerca')}
                 >
                     <FontAwesomeIcon icon={faAddressCard} className="text-base sm:text-md"/>
-                    <span className={`hidden sm:block text-xs sm:text-md font-label`}>Sobre Mí</span>
+                    <span className={`hidden tablet:block text-xs sm:text-md font-label`}>Sobre Mí</span>
                 </button>
 
                 {/* Botón de Habilidades */}
@@ -95,7 +95,7 @@ function Navbar() {
                     onClick={() => handleClick('habilidades')}
                 >
                     <FontAwesomeIcon icon={faLightbulb} className="text-base sm:text-md"/>
-                    <span className={`hidden sm:block text-xs sm:text-md font-label`}>Habilidades</span>
+                    <span className={`hidden tablet:block text-xs sm:text-md font-label`}>Habilidades</span>
                 </button>
 
                 {/* Botón de Proyectos */}
@@ -104,7 +104,7 @@ function Navbar() {
                     onClick={() => handleClick('proyectos')}
                 >
                     <FontAwesomeIcon icon={faBriefcase} className="text-base sm:text-md"/>
-                    <span className={`hidden sm:block text-xs sm:text-md font-label`}>Proyectos</span>
+                    <span className={`hidden tablet:block text-xs sm:text-md font-label`}>Proyectos</span>
                 </button>
 
                 {/* Botón de Contacto */}
@@ -113,7 +113,7 @@ function Navbar() {
                     onClick={() => handleClick('contacto')}
                 >
                     <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-base sm:text-md"/>
-                    <span className={`hidden sm:block text-xs sm:text-md font-label`}>Contacto</span>
+                    <span className={`hidden tablet:block text-xs sm:text-md font-label`}>Contacto</span>
                 </button>
             </nav>
         </div>
