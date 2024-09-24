@@ -3,11 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '@material/web/iconbutton/filled-icon-button';
 
-const Card = ({ title, description, image }) => {
+const ComposableCard = ({ title, description, image, onClick }) => {
   return (
-    <div className="flex flex-col w-full bg-indigo-600 backdrop-blur-2xl bg-opacity-40 rounded-lg shadow-lg overflow-hidden sm:transition-all sm:hover:scale-z1 cursor-pointer">
+    <div 
+      onClick={onClick}  // Llamada a la función para abrir el modal
+      className="flex flex-col w-full bg-indigo-400 backdrop-blur-2xl bg-opacity-50 rounded-lg shadow-lg overflow-hidden sm:transition-all sm:hover:scale-z1 cursor-pointer">
+      
       <div className="p-4 flex flex-row justify-between items-center">
-        <aside className="">
+        <aside>
           <h2 className="text-xl font-semibold font-title text-white">{title}</h2>
           <p className="mt-2 text-gray-200 font-body text-sm tablet:text-base mr-4">{description}</p>
         </aside>
@@ -19,7 +22,6 @@ const Card = ({ title, description, image }) => {
         </span>
       </div>
 
-      {/* Contenedor de la imagen */}
       <div className="relative flex h-64 w-full justify-center items-center sm:right-0 sm:bottom-0">
         <img className="object-contain h-full w-full" src={image} alt={title} />
       </div>
@@ -27,4 +29,4 @@ const Card = ({ title, description, image }) => {
   );
 };
 
-export default Card;
+export default ComposableCard;
