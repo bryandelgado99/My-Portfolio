@@ -1,0 +1,37 @@
+{
+    "projects": [
+      {
+        "title": "Raymishop",
+        "description": "Una tienda online enfocada en promover la cultura ecuatoriana a través de la economía naranja y la sostenibilidad.",
+        "image": "https://github.com/bryandelgado99/My-Portfolio/blob/908ff90ed3c325d0c72e886533ddbed34cb17918/public/assets/raymi_mob1.png",
+        "technologies": ["React", "Tailwind CSS"],
+        "github_repo": "https://github.com/bryandelgado99/Ecua-shop",
+        "live_preview": "https://raymishop.netlify.app/"
+      },
+      {
+        "title": "Funly",
+        "description": "un sitio diseñado para el entretenimiento y el ocio, donde puedes conocer y disfrutar de tus productos favoritos.",
+        "image": "https://github.com/bryandelgado99/My-Portfolio/blob/908ff90ed3c325d0c72e886533ddbed34cb17918/public/assets/funly_pc.png",
+        "technologies": ["React", "Tailwind CSS", "API Restful"],
+        "github_repo": "https://github.com/bryandelgado99/Polivet-App",
+        "live_preview": "https://funly-api.netlify.app/"
+      },
+      {
+        "title": "Polivet",
+        "description": "Un sistema de gestión veterinario de fácil manejo, para los amantes de los animales y su salud.",
+        "image": "https://github.com/bryandelgado99/My-Portfolio/blob/908ff90ed3c325d0c72e886533ddbed34cb17918/public/assets/veterinaria.png",
+        "technologies": ["React", "Bootstrap", "MongoDB"],
+        "github_repo": "https://github.com/bryandelgado99/Polivet-App",
+        "live_preview": "https://funly-api.netlify.app/"
+      },
+      {
+        "title": "Firesapp!",
+        "description": "Un aplicativo de comunicación innovador, privado y seguro; realizado con Ionic y Vue.",
+        "image": "https://link-a-tu-imagen.com/selector-idioma.png",
+        "technologies": ["Ionic", "Vue", "Firebase"],
+        "github_repo": "https://github.com/bryandelgado99/Ionic-FireChat-IB",
+        "live_preview": "https://firesapp-6074e.web.app/"
+      }
+    ]
+  }
+  

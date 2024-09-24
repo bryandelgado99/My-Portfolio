@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import ElectronicaMK from '../markdown/mobile/ElectronicaZurita.md';
 import ElectronicaIMG from '../../public/assets/electronica.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDartLang, faFlutter, faGithub, faGooglePlay, faNodeJs } from '@fortawesome/free-brands-svg-icons';
