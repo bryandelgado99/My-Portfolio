@@ -13,7 +13,7 @@
         "description": "un sitio diseñado para el entretenimiento y el ocio, donde puedes conocer y disfrutar de tus productos favoritos.",
         "image": "./public/assets/funly_pc.png",
         "technologies": ["React", "NodeJS", "Tailwind"],
-        "github_repo": "https://github.com/bryandelgado99/Polivet-App",
+        "github_repo": "https://github.com/bryandelgado99/Funly--Entretenimiento-y-diversion",
         "live_preview": "https://funly-api.netlify.app/"
       },
       {
@@ -22,7 +22,7 @@
         "image": "./public/assets/veterinaria.png",
         "technologies": ["React", "Bootstrap", "MongoDB"],
         "github_repo": "https://github.com/bryandelgado99/Polivet-App",
-        "live_preview": "https://funly-api.netlify.app/"
+        "live_preview": "https://polivet.netlify.app/"
       },
       {
         "title": "Firesapp!",
