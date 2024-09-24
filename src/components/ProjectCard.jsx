@@ -15,7 +15,7 @@ function ProjectCard() {
         <div className='py-8 ml-8'>
           <h2 className='text-xl font-label font-bold'>Electrónica Zurita</h2>
           <p className='text-base text-gray-700 mt-3'>
-            Una aplicación que permite la gestión de equipos y órdenes de trabajo para distintos servicios electrónicos
+            Una aplicación que permite la gestión de equipos y órdenes de trabajo para distintos servicios electrónicos.
           </p>
           <aside className='flex flex-row mt-8 py-6 gap-8 justify-start items-center w-fit'>
             <Link to="https://github.com/bryandelgado99/Electronica-Zurita--Mobile-App">
