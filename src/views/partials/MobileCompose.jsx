@@ -2,6 +2,7 @@ import React from 'react';
 import '@material/web/iconbutton/outlined-icon-button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { MobileProjects } from '../../components/ProjectCard';
 
 function MobileCompose({ isOpen, onClose }) {
 
@@ -19,6 +20,7 @@ function MobileCompose({ isOpen, onClose }) {
             <h1 className="text-white text-2xl font-title font-semibold tablet:text-4xl py-8">{"<Aplicaciones Móviles/>"}</h1>
             <div className='flex w-full h-96 mt-9'>
                 {/* Contenido del modal */}
+                <MobileProjects/>
             </div>
         </div>
     );

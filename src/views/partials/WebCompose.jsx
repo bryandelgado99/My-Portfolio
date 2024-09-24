@@ -2,8 +2,7 @@ import React from 'react';
 import '@material/web/iconbutton/outlined-icon-button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import ProjectCard from '../../components/ProjectCard';
-import ProjectCardContainer from '../../components/ProjectCard';
+import { WebProjects } from '../../components/ProjectCard';
 
 function WebCompose({ isOpen, onClose }) {
 
@@ -21,7 +20,7 @@ function WebCompose({ isOpen, onClose }) {
             <h1 className="text-white text-3xl font-title font-semibold tablet:text-4xl py-8" >{"<Aplicaciones Web/>"}</h1>
             <div className='flex w-full h-full overflow-hidden mt-16 rounded-2xl'>
                 {/* Contenido del modal */}
-                <ProjectCardContainer />
+                <WebProjects />
             </div>
         </div>
     );

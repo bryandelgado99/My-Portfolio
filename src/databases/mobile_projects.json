@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "title": "Electrónica Zurita",
+            "description": "Una aplicación que permite la gestión de equipos y órdenes de trabajo.",
+            "image": "./public/assets/electronica.png",
+            "technologies": ["Flutter", "NodeJS", "MongoDB"],
+            "github_repo": "https://github.com/bryandelgado99/Electronica-Zurita--Mobile-App",
+            "live_preview": "https://play.google.com/store/apps/details?id=com.pauldev.electronica_zurita"
+        }
+    ]
+}  
