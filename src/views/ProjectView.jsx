@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import '@material/web/button/filled-button.js';
-import ComposableCard from '../components/ComposableCard.jsx';
-import WebCompose from './partials/WebCompose.jsx';
-import MobileCompose from './partials/MobileCompose.jsx';
-import CodingWeb from "./public/coding-5-61.svg";
-import CodingMobile from "./public/mobile-phone-75.svg"
+import CodingWeb from "../../public/coding-5-61.svg";
+import CodingMobile from "../../public/mobile-phone-75.svg"
+import ComposableCard from '../components/ComposableCard';
+import MobileCompose from './partials/MobileCompose';
+import WebCompose from './partials/WebCompose';
+
 
 function ProjectsView() {
     const title = "<Proyectos/>";
