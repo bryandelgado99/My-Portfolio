@@ -3,6 +3,8 @@ import '@material/web/button/filled-button.js';
 import ComposableCard from '../components/ComposableCard.jsx';
 import WebCompose from './partials/WebCompose.jsx';
 import MobileCompose from './partials/MobileCompose.jsx';
+import CodingWeb from "./public/coding-5-61.svg";
+import CodingMobile from "./public/mobile-phone-75.svg"
 
 function ProjectsView() {
     const title = "<Proyectos/>";
@@ -46,13 +48,13 @@ function ProjectsView() {
                     <ComposableCard 
                          title="Aplicaciones Web" 
                          description="Aplicaciones destinadas a entornos de sobremesa, más amplias y dinámicas." 
-                         image="./public/coding-5-61.svg"
+                         image={CodingWeb}
                          onClick={handleOpenWebModal}  // Maneja la apertura del modal de Web
                     />
                     <ComposableCard 
                          title="Aplicaciones Móviles" 
                          description="Un conjunto de aplicaciones al alcance de la mano." 
-                         image="./public/mobile-phone-75.svg"
+                         image={CodingMobile}
                          onClick={handleOpenMobileModal}  // Maneja la apertura del modal de Mobile
                     />
                 </div>
@@ -61,13 +63,13 @@ function ProjectsView() {
                     <ComposableCard 
                          title="Aplicaciones Web" 
                          description="Aplicaciones destinadas a entornos de sobremesa, más amplias y dinámicas." 
-                         image="./public/coding-5-61.svg"
+                         image={CodingWeb}
                          onClick={handleOpenWebModal}  // Maneja la apertura del modal de Web
                     />
                     <ComposableCard 
                          title="Aplicaciones Móviles" 
                          description="Un conjunto de aplicaciones al alcance de la mano." 
-                         image="./public/mobile-phone-75.svg"
+                         image={CodingMobile}
                          onClick={handleOpenMobileModal}  // Maneja la apertura del modal de Mobile
                     />
                 </div>
