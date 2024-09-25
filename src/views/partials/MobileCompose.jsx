@@ -17,11 +17,9 @@ function MobileCompose({ isOpen, onClose }) {
                      </md-outlined-icon-button>
                 </span>
             </div>
-            <h1 className="text-white text-2xl font-title font-semibold tablet:text-4xl py-8">{"<Aplicaciones Móviles/>"}</h1>
-            <div className='flex w-full h-screen mt-9 overflow-hidden'>
-                {/* Contenido del modal */}
-                <MobileProjects/>
-            </div>
+            <h1 className="text-white text-lg font-title font-semibold tablet:text-3xl py-4 mb-8">{"<Aplicaciones Móviles/>"}</h1>
+              {/* Contenido del modal */}
+              <MobileProjects/>
         </div>
     );
 }

@@ -44,7 +44,7 @@
             "title": "Pinlogy",
             "description": "Aplicación Flutter de geolocalización múltiple, para el dibujado de polígonos topográficos en tiempo real; a través de la API de Google Maps.",
             "image": "/pinlogy.png",
-            "technologies": ["Flutter", "Dart", "Android", "Firebase", "Web"],
+            "technologies": ["Flutter", "Android", "Firebase", "Web"],
             "github_repo": "https://github.com/bryandelgado99/Pin-logy",
             "live_preview": "https://github.com/bryandelgado99/Pin-logy/releases/tag/1.0.0"
         }

@@ -47,6 +47,14 @@
       "technologies": ["Flutter", "Web"],
       "github_repo": "https://github.com/bryandelgado99/Turist-Card-Layout",
       "live_preview": null
+    },
+    {
+      "title": "Farmacias ESFOT-Care+",
+      "description": "Un sistema de gestión farmacéutica completo, con manejo de administradores, inventarios y cajeros, realizado con Java y MySQL. Disponible en sistemas de sobremesa multiplataforma.",
+      "image": "/farmacia.png",
+      "technologies": ["Java", "MySQL"],
+      "github_repo": "https://github.com/bryandelgado99/Farmacias-ESFOT-Care",
+      "live_preview": "https://github.com/bryandelgado99/Farmacias-ESFOT-Care/releases/tag/1.0.0"
     }
   ]
 }

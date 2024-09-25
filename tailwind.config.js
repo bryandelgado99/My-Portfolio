@@ -6,7 +6,21 @@ export default {
   ],
   theme: {
     extend: {
-      // Añadir estilos personalizados
+      animation: {
+        'gradient-move': 'gradientMove 12s ease infinite',
+      },
+      keyframes: {
+        gradientMove: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+      // Definir los colores del gradiente
+      backgroundImage: {
+        'gradient-base-purple': 'linear-gradient(330deg, blue, #8267e9)',
+        'gradient-second-purple': 'linear-gradient(330deg,#8267e9,#848cdd,#6b5fef)'
+      },
       colors: {
         'md-outline': '#fbfbfb',
         'md-on-surface': '#fbfbfb',
@@ -29,7 +43,8 @@ export default {
         'z1':'1.05',
         'z2':'1.00',
         'z3':'0.95',
-        'z4':'0.92'
+        'z4':'0.92',
+        'small':'0.3'
       }
     },
     screens: {

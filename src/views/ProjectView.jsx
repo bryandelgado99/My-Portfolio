@@ -32,7 +32,7 @@ function ProjectsView() {
         <>
             <section 
                 id="proyectos" 
-                className="min-h-screen flex flex-col tablet:flex-col sm:flex-row dark:bg-indigo-500 bg-no-repeat bg-left-bottom sm:bg-none shadow-xl z-50">
+                className="min-h-screen flex flex-col tablet:flex-col sm:flex-row gradient-background bg-gradient-base-purple z-50">
                 
                 <div className="flex flex-col p-10 sm:w-1/2 tablet:p-14 sm:justify-center sm:items-start">
                     <h1 className="sm:relative text-bold font-title text-3xl text-white font-bold tablet:text-5xl">{title}</h1>
@@ -45,9 +45,9 @@ function ProjectsView() {
                 </div>  
 
                 {/* Sección para las tarjetas */}
-                <div className='flex flex-col gap-4 p-8 -mt-10 sm:hidden'>
+                <div className='flex flex-col px-4 gap-4 sm:hidden mb-28'>
                     <ComposableCard 
-                         title="Aplicaciones Web" 
+                         title="Aplicaciones Web y Escritorio" 
                          description="Aplicaciones destinadas a entornos de sobremesa, más amplias y dinámicas." 
                          image={CodingWeb}
                          onClick={handleOpenWebModal}  // Maneja la apertura del modal de Web
@@ -62,7 +62,7 @@ function ProjectsView() {
 
                 <div className='sm:flex sm:w-1/2 hidden sm:flex-col bg-gray-700 bg-opacity-70 w-fit gap-8 justify-evenly items-center backdrop-blur-xl rounded-l-6xl shadow-lg p-20 h-screen'>
                     <ComposableCard 
-                         title="Aplicaciones Web" 
+                         title="Aplicaciones Web y Escritorio" 
                          description="Aplicaciones destinadas a entornos de sobremesa, más amplias y dinámicas." 
                          image={CodingWeb}
                          onClick={handleOpenWebModal}  // Maneja la apertura del modal de Web

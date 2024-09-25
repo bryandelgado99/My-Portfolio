@@ -17,11 +17,8 @@ function WebCompose({ isOpen, onClose }) {
                      </md-outlined-icon-button>
                 </span>
             </div>
-            <h1 className="text-white text-3xl font-title font-semibold tablet:text-4xl py-8" >{"<Aplicaciones Web/>"}</h1>
-            <div className='flex w-full h-full overflow-hidden mt-16 rounded-2xl'>
-                {/* Contenido del modal */}
-                <WebProjects />
-            </div>
+            <h1 className="text-white text-xl font-title font-semibold tablet:text-3xl py-4 px-4 tablet:px-0 mb-4 text-center" >{"<Aplicaciones Web y Escritorio/>"}</h1>
+            <WebProjects />
         </div>
     );
 }

@@ -13,12 +13,28 @@
     --md-sys-color-outline: #fbfbfb;
     --md-sys-color-on-surface: #fbfbfb;
     --md-sys-color-secondary-container: #cce8e7;
-    --md-filled-tonal-button-container-color: rgb(129 140 248);
+    --md-filled-tonal-button-container-color: #818cf8;
     --md-filled-tonal-button-label-text-color: #fbfbfb;
     --md-dialog-container-color: rgb(133, 141, 216);
     --md-filled-tonal-button-label-text-font: "Poppins":
+    --md-filled-button-label-text-font: "Poppins";
     --md-outlined-button-label-text-font: "Poppins";
     --md-outlined-button-label-text-color: rgb(111, 80, 224);
     --md-filled-icon-button-icon-size: 16px;
     --md-outlined-button-outline-color: rgb(111, 80, 224);
+}
+
+@layer utilities {
+    .gradient-background {
+        background-size: 120% 120%;
+        animation: gradient-move;
+    }
+
+    .gradient-base-purple {
+        background-image: var(--tw-gradient-base-purple);
+      }
+    
+    .gradient-second-purple {
+        background-image: var(--tw-gradient-second-purple);
+    }
 }

@@ -59,7 +59,7 @@ function Navbar() {
     return (
         <div className={`sticky flex justify-center items-center w-full h-auto z-20`}>
             <nav
-                className={`fixed sm:bottom-8 sm:h-fit sm:rounded-full rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'w-full sm:w-fit sm:rounded-full sm:justify-evenly sm:bg-opacity-50 sm:backdrop-blur-md' : 'w-full sm:w-fit tablet:bottom-0 sm:-bottom-1 sm:shadow-3xl sm:rounded-3xl'} bg-indigo-600 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}
+                className={`fixed sm:h-fit rounded-t-3xl sm:p-2 p-3 sm:mx-auto bottom-0 ${isScrolled ? 'w-full sm:w-fit sm:rounded-full sm:justify-evenly sm:bg-opacity-50 -bottom-36' : 'w-full sm:w-fit sm:shadow-3xl'} bg-indigo-600 text-white shadow-lg flex transition-all duration-300 ease-in-out justify-around sm:space-x-2`}
             >
 
                 {/* Botón de Inicio */}

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faFlutter, faGithub, faNodeJs, faReact, faVuejs, faGooglePlay, faDartLang, faAndroid, faEdge, faWindows, faLinux } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faFlutter, faGithub, faNodeJs, faReact, faVuejs, faGooglePlay, faDartLang, faAndroid, faEdge, faWindows, faLinux, faJava } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import 'boxicons'; // Importa BoxIcons
 import '@material/web/iconbutton/filled-tonal-icon-button';
 import '@material/web/button/filled-button';
 import '@material/web/button/filled-tonal-button';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { DiMysql } from "react-icons/di";
 
 // Mapeo de tecnologías a íconos usando BoxIcons e Ionicons
 const techIcons = {
@@ -24,7 +25,9 @@ const techIcons = {
   "Android": <FontAwesomeIcon icon={faAndroid} className="text-xl"/>,
   "Web": <FontAwesomeIcon icon={faEdge} className="text-xl"/>,
   "Windows": <FontAwesomeIcon icon={faWindows} className="text-xl"/>,
-  "Linux": <FontAwesomeIcon icon={faLinux} className="text-xl"/>
+  "Linux": <FontAwesomeIcon icon={faLinux} className="text-xl"/>,
+  "Java": <FontAwesomeIcon icon={faJava} className="text-xl"/>,
+  "MySQL": <DiMysql className="text-xl" />
 };
 
 // Función para obtener los datos desde el JSON
@@ -129,7 +132,7 @@ function MobileProjects() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll h-full p-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll h-full px-4 sm:px-6">
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
@@ -146,7 +149,7 @@ function WebProjects() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll h-auto p-8 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 overflow-y-scroll h-auto px-4 sm:px-6 w-full py-8">
       {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
