@@ -125,7 +125,7 @@ function MobileProjects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetchProjects('../../public/mobile_projects.json').then(setProjects);
+    fetchProjects('/mobile_projects.json').then(setProjects);
   }, []);
 
   return (
@@ -142,7 +142,7 @@ function WebProjects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetchProjects('../../public/web_projects.json').then(setProjects);
+    fetchProjects('/web_projects.json').then(setProjects);
   }, []);
 
   return (
