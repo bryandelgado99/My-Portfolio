@@ -46,13 +46,13 @@ function ProjectsView() {
                     <ComposableCard 
                          title="Aplicaciones Web" 
                          description="Aplicaciones destinadas a entornos de sobremesa, más amplias y dinámicas." 
-                         image="./public/vectors/coding-5-61.svg"
+                         image="./public/coding-5-61.svg"
                          onClick={handleOpenWebModal}  // Maneja la apertura del modal de Web
                     />
                     <ComposableCard 
                          title="Aplicaciones Móviles" 
                          description="Un conjunto de aplicaciones al alcance de la mano." 
-                         image="./public/vectors/mobile-phone-75.svg"
+                         image="./public/mobile-phone-75.svg"
                          onClick={handleOpenMobileModal}  // Maneja la apertura del modal de Mobile
                     />
                 </div>
@@ -61,13 +61,13 @@ function ProjectsView() {
                     <ComposableCard 
                          title="Aplicaciones Web" 
                          description="Aplicaciones destinadas a entornos de sobremesa, más amplias y dinámicas." 
-                         image="./public/vectors/coding-5-61.svg"
+                         image="./public/coding-5-61.svg"
                          onClick={handleOpenWebModal}  // Maneja la apertura del modal de Web
                     />
                     <ComposableCard 
                          title="Aplicaciones Móviles" 
                          description="Un conjunto de aplicaciones al alcance de la mano." 
-                         image="./public/vectors/mobile-phone-75.svg"
+                         image="./public/mobile-phone-75.svg"
                          onClick={handleOpenMobileModal}  // Maneja la apertura del modal de Mobile
                     />
                 </div>
