@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faFlutter, faGithub, faNodeJs, faReact, faVuejs, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faFlutter, faGithub, faNodeJs, faReact, faVuejs, faGooglePlay, faDartLang, faAndroid, faEdge, faWindows, faLinux } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import 'boxicons'; // Importa BoxIcons
 import '@material/web/iconbutton/filled-tonal-icon-button';
@@ -19,7 +19,12 @@ const techIcons = {
   "Vue": <FontAwesomeIcon icon={faVuejs} className="text-xl"/>,
   "MongoDB": <box-icon name='mongodb' type='logo' className="text-xl"></box-icon>,
   "Flutter": <FontAwesomeIcon icon={faFlutter} className="text-xl"/>,
-  "Bootstrap": <box-icon name='bootstrap' type='logo' className="text-xl"></box-icon>
+  "Bootstrap": <box-icon name='bootstrap' type='logo' className="text-xl"></box-icon>,
+  "Dart": <FontAwesomeIcon icon={faDartLang} className="text-xl"/>,
+  "Android": <FontAwesomeIcon icon={faAndroid} className="text-xl"/>,
+  "Web": <FontAwesomeIcon icon={faEdge} className="text-xl"/>,
+  "Windows": <FontAwesomeIcon icon={faWindows} className="text-xl"/>,
+  "Linux": <FontAwesomeIcon icon={faLinux} className="text-xl"/>
 };
 
 // Función para obtener los datos desde el JSON
@@ -35,33 +40,40 @@ function ProjectCard({ project }) {
     <>
       {/* Tarjeta para dispositivos grandes */}
       <article className='hidden w-auto h-auto tablet:flex justify-between gap-4 rounded-3xl bg-white shadow-xl'>
-        <div className='py-8 ml-8'>
+        <div className='py-8 ml-8 w-2/3'>
           <h2 className='text-xl font-label font-bold'>{project.title}</h2>
           <p className='text-base text-gray-700 mt-3'>{project.description}</p>
-          <aside className='flex flex-row mt-8 py-6 gap-8 justify-start items-center w-fit'>
-            <Link to={project.github_repo}>
-              <md-filled-tonal-button className="w-[170px] flex justify-center items-center gap-2">
-                <FontAwesomeIcon icon={faGithub} />
-                <span className='ml-8'>Repositorio</span>
-              </md-filled-tonal-button>
-            </Link>
-
-            <Link to={project.live_preview}>
-              <md-filled-button className="w-[170px] flex justify-center items-center gap-2">
-                <FontAwesomeIcon icon={faGooglePlay} />
-                <span className='ml-3'>Ver Demo</span>
-              </md-filled-button>
-            </Link>
-          </aside>
-        </div>
-        <div className='relative bg-slate-500 rounded-2xl shadow-2xl'>
-          <img src={project.image} className='w-[500px] h-full object-cover rounded-2xl' alt={project.title} />
-          <div className='absolute flex justify-around items-center bottom-5 w-full'>
+          <aside className='flex flex-row mt-12 py-6 gap-8 justify-start items-center w-fit'>
             {project.technologies.map((tech, index) => (
               <md-filled-tonal-icon-button key={index}>
                 {techIcons[tech] || null} {/* Renderiza el ícono correspondiente o null si no existe */}
               </md-filled-tonal-icon-button>
             ))}
+          </aside>
+        </div>
+        <div className='relative bg-slate-500 rounded-2xl shadow-2xl w-2/3'>
+          <img src={project.image} className='w-full h-[380px] object-cover flex justify-start rounded-2xl' alt={project.title} />
+          <div className='absolute flex flex-row gap-4 justify-around items-center bottom-10 w-full'>
+          <Link to={project.github_repo}>
+              <md-filled-tonal-button className="w-[170px] flex justify-center items-center gap-2">
+                <FontAwesomeIcon icon={faGithub} />
+                <span className='ml-2'>Repositorio</span>
+              </md-filled-tonal-button>
+            </Link>
+
+            {project.live_preview ? (
+              <Link to={project.live_preview}>
+                <md-filled-button className="w-[180px]">
+                  <FontAwesomeIcon icon={faLink} className="text-base" />
+                  <span className="ml-2 text-sm">Demo</span>
+                </md-filled-button>
+              </Link>
+              ) : (
+              <md-filled-button className="">
+                Próximamente
+              </md-filled-button>
+              )
+            }
           </div>
         </div>
       </article>
@@ -71,29 +83,36 @@ function ProjectCard({ project }) {
         <div className='relative rounded-2xl shadow-md'>
           <img src={project.image} className='w-full h-[350px] object-cover rounded-t-2xl' alt={project.title} />
           <div className='absolute flex justify-around items-center bottom-5 w-full'>
-            {project.technologies.map((tech, index) => (
-              <md-filled-tonal-icon-button key={index}>
-                {techIcons[tech] || null} {/* Renderiza el ícono correspondiente o null si no existe */}
-              </md-filled-tonal-icon-button>
-            ))}
+            <Link to={project.github_repo}>
+              <md-filled-tonal-button className="">
+                <FontAwesomeIcon icon={faGithub} className='text-base'/>
+                <span className='ml-2 text-base'>Repositorio</span>
+              </md-filled-tonal-button>
+            </Link>
+            {project.live_preview ? (
+              <Link to={project.live_preview}>
+                <md-filled-button className="w-[180px]">
+                  <FontAwesomeIcon icon={faLink} className="text-base" />
+                  <span className="ml-2 text-base">Demo</span>
+                </md-filled-button>
+              </Link>
+              ) : (
+              <md-filled-button className="">
+                Próximamente
+              </md-filled-button>
+              )
+            }
           </div>
         </div>
         <div className='px-8'>
           <h2 className='text-xl font-label font-bold'>{project.title}</h2>
           <p className='text-base text-gray-700 mt-3 text-justify'>{project.description}</p>
-          <aside className='flex flex-col py-10 mb-4 gap-8 justify-start items-center w-full'>
-            <Link to={project.github_repo}>
-              <md-filled-tonal-button className="">
-                <FontAwesomeIcon icon={faGithub} className='text-base'/>
-                <span className='ml-8 text-base'>Repositorio</span>
-              </md-filled-tonal-button>
-            </Link>
-            <Link to={project.live_preview}>
-              <md-filled-button className="">
-                <FontAwesomeIcon icon={faLink} className='text-base'/>
-                <span className='ml-3 text-base'>Ver Demo</span>
-              </md-filled-button>
-            </Link>
+          <aside className='flex flex-row py-10 mb-4 gap-4 justify-start items-center w-full'>
+          {project.technologies.map((tech, index) => (
+              <md-filled-tonal-icon-button key={index}>
+                {techIcons[tech] || null} {/* Renderiza el ícono correspondiente o null si no existe */}
+              </md-filled-tonal-icon-button>
+            ))}
           </aside>
         </div>
       </article>

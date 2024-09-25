@@ -18,6 +18,7 @@
     --md-dialog-container-color: rgb(133, 141, 216);
     --md-filled-tonal-button-label-text-font: "Poppins":
     --md-outlined-button-label-text-font: "Poppins";
-    --md-outlined-button-label-text-color: rgb(255, 255, 255);
+    --md-outlined-button-label-text-color: rgb(111, 80, 224);
     --md-filled-icon-button-icon-size: 16px;
+    --md-outlined-button-outline-color: rgb(111, 80, 224);
 }
