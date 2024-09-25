@@ -3,7 +3,7 @@
         {
             "title": "Electrónica Zurita",
             "description": "Una aplicación que permite la gestión de equipos y órdenes de trabajo.",
-            "image": "./public/electronica.png",
+            "image": "../../public/electronica.png",
             "technologies": ["Flutter", "NodeJS", "MongoDB"],
             "github_repo": "https://github.com/bryandelgado99/Electronica-Zurita--Mobile-App",
             "live_preview": "https://play.google.com/store/apps/details?id=com.pauldev.electronica_zurita"
@@ -11,7 +11,7 @@
         {
             "title": "Sombrero Seleccionador",
             "description": "Aplicación que ter permite seleccionar la casa de 'mago' a la que perteneces (entre diferentes áreas como diseño y software). Realizada en Flutter para sistemas Android y Web.",
-            "image": "./public/electronica.png",
+            "image": "../../public/electronica.png",
             "technologies": ["Flutter", "Dart", "Android", "Web"],
             "github_repo": "https://github.com/bryandelgado99/Sombrero-Seleccionador",
             "live_preview": null
@@ -19,7 +19,7 @@
         {
             "title": "Shield App",
             "description": "Aplicación que te permite visualizar la información de tus comics y superhéroes favoritos, mediante la Marvel API.",
-            "image": "./public/shield_app.png",
+            "image": "../../public/shield_app.png",
             "technologies": ["Flutter", "Dart", "Android"],
             "github_repo": "https://github.com/bryandelgado99/Shield-App",
             "live_preview": "https://github.com/bryandelgado99/Shield-App/releases/tag/1.0.1"
@@ -27,7 +27,7 @@
         {
             "title": "Firecamera",
             "description": "Aplicación realizada con Flutter que permite tomar fotografías, y subirlas a Cloud Storage.",
-            "image": "./public/firecamera.png",
+            "image": "../../public/firecamera.png",
             "technologies": ["Flutter", "Firebase", "Android"],
             "github_repo": "https://github.com/bryandelgado99/Firecamera",
             "live_preview": "https://github.com/bryandelgado99/Firecamera/releases/tag/1.0.0"
@@ -35,7 +35,7 @@
         {
             "title": "Ionllery",
             "description": "Una aplicación de galería y cámara, realizada en Ionic e inspirada en la UI de iOS.",
-            "image": "./public/ionllery.jpg",
+            "image": "../../public/ionllery.jpg",
             "technologies": ["Ionic", "Firebase", "Angular"],
             "github_repo": "https://github.com/bryandelgado99/Ionllery-",
             "live_preview": ""
@@ -43,7 +43,7 @@
         {
             "title": "Pinlogy",
             "description": "Aplicación Flutter de geolocalización múltiple, para el dibujado de polígonos topográficos en tiempo real; a través de la API de Google Maps.",
-            "image": "./public/pinlogy.png",
+            "image": "../../public/pinlogy.png",
             "technologies": ["Flutter", "Dart", "Android", "Firebase", "Web"],
             "github_repo": "https://github.com/bryandelgado99/Pin-logy",
             "live_preview": "https://github.com/bryandelgado99/Pin-logy/releases/tag/1.0.0"
