@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import AboutView from "./views/AboutView.jsx";
 import Navbar from "./components/Navbar.jsx";
 import HomeView from "./views/HomeView.jsx";
@@ -27,7 +27,7 @@ function App() {
     */}
 
     return (
-       <Router>
+       <BrowserRouter>
             <Navbar />
             <Routes>
                 {/* Definimos las rutas para las diferentes vistas */}
@@ -37,7 +37,7 @@ function App() {
                 <Route path="/projects" element={<ProjectsView />}/>
                 <Route path="/contact" element={<ContactView />} />
             </Routes>
-       </Router>
+       </BrowserRouter>
     );
 }
 
