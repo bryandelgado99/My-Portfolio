@@ -7,6 +7,8 @@ import '@material/web/iconbutton/filled-tonal-icon-button';
 import '@material/web/button/filled-button';
 import '@material/web/button/filled-tonal-button';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import WebJSON from '../databases/web_projects.json';
+import MobileJSON from '../databases/mobile_projects.json';
 
 // Mapeo de tecnologías a íconos usando BoxIcons e Ionicons
 const techIcons = {
@@ -125,7 +127,7 @@ function MobileProjects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetchProjects('../src/databases/mobile_projects.json').then(setProjects);
+    fetchProjects(MobileJSON).then(setProjects);
   }, []);
 
   return (
@@ -142,7 +144,7 @@ function WebProjects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetchProjects('../src/databases/web_projects.json').then(setProjects);
+    fetchProjects(WebJSON).then(setProjects);
   }, []);
 
   return (
