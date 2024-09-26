@@ -31,8 +31,8 @@ function HomeView() {
                     backgroundColor: '#818cf8'
                 }}
             >
-                <div className="relative flex w-screen h-1/2 sm:h-full flex-col justify-self-end items-center gap-8 mt-5">
-                    <article className="absolute flex text-center flex-col z-20 gap-8 text-black w-[250px] tablet:w-fit h-[500px] justify-center items-center">
+                <div className="relative flex w-screen min-h-screen sm:h-full flex-col justify-end items-center gap-8">
+                    <article className="absolute flex text-center flex-col z-20 gap-8 text-black w-[250px] tablet:w-fit h-[800px] justify-center items-center">
                         <h1 className="font-title text-2xl tablet:text-4xl">{"<Hola!, Soy Paul/>"}</h1>
                         <p className="text-base tablet:text-lg font-label text-blak sm:text-wrap">
                             Un desarrollador amante de <span className="font-bold" ref={el}></span>
