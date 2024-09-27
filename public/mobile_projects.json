@@ -11,8 +11,8 @@
         {
             "title": "Sombrero Seleccionador",
             "description": "Aplicación que ter permite seleccionar la casa de 'mago' a la que perteneces (entre diferentes áreas como diseño y software). Realizada en Flutter para sistemas Android y Web.",
-            "image": "/electronica.png",
-            "technologies": ["Flutter", "Dart", "Android", "Web"],
+            "image": "/sombrero.png",
+            "technologies": ["Flutter", "Dart", "Android"],
             "github_repo": "https://github.com/bryandelgado99/Sombrero-Seleccionador",
             "live_preview": null
         },

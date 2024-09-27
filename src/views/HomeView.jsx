@@ -8,7 +8,7 @@ function HomeView() {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Android y Flutter.', 'UI y UX.'],
+            strings: ['UI y UX.','Android y Flutter.'],
             typeSpeed: 50,
         });
 
@@ -37,6 +37,9 @@ function HomeView() {
                         <p className="text-base tablet:text-lg font-label text-blak sm:text-wrap">
                             Un desarrollador amante de <span className="font-bold" ref={el}></span>
                         </p>
+                        <div className="">
+
+                        </div>
                     </article>
 
                     <img src={QBotAsset} className="absolute z-10 drop-shadow-xl tablet:scale-125 scale-90 sm:overflow-y-hidden"/>
